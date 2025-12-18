@@ -111,8 +111,9 @@ tab1, tab2, tab3, tab4 = st.tabs(["Overview", "Prediction", "Analysis", "Model D
 with tab1:
     st.header("Problem Statement")
     st.write("""
-    Sleep deprivation is a growing public health concern. This system predicts individual sleep duration 
-    based on daily lifestyle habits (in hours) to help users optimize their sleep patterns.
+    Sleep deprivation is a growing public health issue that affects physical health, mental well-being, and daily performance. Factors such as poor lifestyle habits, irregular schedules, and increased screen time have led many individuals to experience inadequate or inconsistent sleep. Although people recognize the importance of sleep, they often lack clear understanding of how their daily habits impact their sleep duration.
+
+    This system predicts an individual’s sleep duration based on daily lifestyle habits measured in hours. By identifying patterns between these habits and sleep outcomes, the system aims to help users better understand their sleep behavior and make informed adjustments to improve their overall sleep quality.
     """)
     
     st.header("About the Data")
@@ -617,4 +618,5 @@ with tab4:
         Despite having a fully functioning technical pipeline, the **low scoring metrics** (R² and MAE) demonstrate that the model fails to capture the complexity of human sleep. 
         
         The system is in **dire need of improvement**. Reliance on this specific iteration for health advice would be misleading. Future work must focus on acquiring high-dimensional clinical data rather than relying solely on self-reported lifestyle metrics.
+
         """)
